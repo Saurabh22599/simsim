@@ -1,76 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Product Store</title>
+    <title>Product Selling Site</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
+        .navbar {
+            background: rgb(125, 5, 161);
+            width: 100%;
+
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
+
+        .ma {
+            margin: auto;
+            margin-bottom: 30px;
         }
-        nav {
-            background-color: #444;
-            color: #fff;
-            text-align: center;
+
+        .font {
+            color: white;
+            font-size: medium;
+        }
+
+        .bc {
+            background-color: aquamarine;
+            border-radius: 20px;
             padding: 10px;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+
+        .black {
+            background-color: black;
+            color: white;
         }
-        .product {
-            border: 1px solid #ccc;
-            background-color: #fff;
-            padding: 20px;
-            margin: 10px;
-            text-align: center;
-            display: inline-block;
-            width: 25%;
-            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+        .co {
+            width: 40%;
+        }
+
+        .fs {
+            font-size: small;
         }
     </style>
+
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to Our Product Store</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a> |
-        <a href="#">Products</a> |
-        <a href="#">Contact</a>
-    </nav>
-    <div class="container">
-        <div class="product">
-            <img src="product1.jpg" alt="Product 1">
-            <h2>Product 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Price: $19.99</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="product2.jpg" alt="Product 2">
-            <h2>Product 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Price: $24.99</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="product3.jpg" alt="Product 3">
-            <h2>Product 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Price: $29.99</p>
-            <button>Add to Cart</button>
+
+    <div class="navbar">
+        <span class="font">VAIBHAV CHAVAN BUSINESS</span>
+
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Card -->
+            <div class="col-md-5 ma">
+                <div class="card bc">
+                    <img src="bath-soap.jpg" class="card-img-top" alt="Product Image" width="300" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">Product Description Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.</p>
+                        <p class="card-text">$99.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 ma">
+                <div class="card bc">
+                    <img src="bath-soap.jpg" class="card-img-top" alt="Product Image" width="300" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                        <p class="card-text">Product Description Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.</p>
+                        <p class="card-text">$99.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat this product card for other products as needed -->
         </div>
     </div>
+
+    <div class="black mt-4 p-5">
+
+        <div class="row">
+
+            <div class="co ma">
+                <Span class="text-center">ABOUT US</Span>
+                <p class="fs">
+                    We are organic agriculture based food
+                    product Company aiming to provide high
+                    quality products and genine service to consumers
+                </p>
+            </div>
+            <div class="co ma"> <Span>CONTACT DETAILS</Span>
+                <p class="fs">
+                    Mobile Number : +91 9879879878
+                    <br>
+                    Address : Sawalivihir Khurda, Shridi, Ahmednagar, Maharashtra 423109
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
